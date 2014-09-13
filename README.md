@@ -1,17 +1,18 @@
-# Node.js 网络应用测试
+# 测试 "MEAN" 实现网络应用
 
 ## 计划
-* 部署在 Heroku 上
-* 后台框架 Express
+
+* 后台框架 Express 4
 * 数据库 MongoHQ (MongoDB, Mongoose)
 * 前台框架 AngularJS
+* 部署在 Heroku 上
 
 ## 数据库测试
 在 Heroku 上建立 MongoDB 数据库的入门介绍：[Object Modeling in Node.js with Mongoose](https://devcenter.heroku.com/articles/nodejs-mongoose), [GitHub上的示例代码](https://github.com/mongolab/hello-mongoose/blob/master/app.js).
 
 [Heroku上应用MongoHQ的一些官方说明](https://devcenter.heroku.com/articles/mongohq#additional-documentation).
 
-[Express 4](http://expressjs.com/).
+[Express API 文档](http://expressjs.com/api).
 
 This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
