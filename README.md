@@ -26,7 +26,7 @@ $ npm install
 $ npm start
 ```
 
-端口可在 `index.js` 中更改。默认本地运行地址 [localhost:5000](http://localhost:5000/)。
+端口可在 `app.js` 中更改。默认本地运行地址 [localhost:5000](http://localhost:5000/)。
 
 ## Heroku上的部署
 
