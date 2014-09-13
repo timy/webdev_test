@@ -39,6 +39,11 @@ $ heroku open
 
 ## 文档
 
+### Express
+[官方关于 Express 4 的路由](http://expressjs.com/migrating-4.html#routing)
+[Express 4 路由的 Blog](http://scotch.io/tutorials/javascript/learn-to-use-the-new-router-in-expressjs-4)
+
+### Heroku部署
 关于 Heroku 上使用 Node.js 的更多信息，参见 Dev Center 的文章：
 
 - [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
