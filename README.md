@@ -1,23 +1,28 @@
 # node-js-getting-started
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+## 数据库测试
+在 Heroku 上建立 MongoDB 数据库的入门介绍：[Object Modeling in Node.js with Mongoose](https://devcenter.heroku.com/articles/nodejs-mongoose), [GitHub上的示例代码](https://github.com/mongolab/hello-mongoose/blob/master/app.js).
+
+[Heroku上应用MongoHQ的一些官方说明](https://devcenter.heroku.com/articles/mongohq#additional-documentation).
+
+[Express 4](http://expressjs.com/).
 
 This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-## Running Locally
+## 本地运行
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+确定已安装[Node.js](http://nodejs.org/)与[Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone git@github.com:timy/webdev_test.git
+$ cd webdev_test
 $ npm install
 $ npm start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+端口可在`index.js`中更改。默认本地运行地址[localhost:5000](http://localhost:5000/)。
 
-## Deploying to Heroku
+## Heroku上的部署
 
 ```
 $ heroku create
@@ -25,9 +30,9 @@ $ git push heroku master
 $ heroku open
 ```
 
-## Documentation
+## 文档
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+关于Heroku上使用 Node.js 的更多信息，参见 Dev Center 的文章：
 
 - [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
