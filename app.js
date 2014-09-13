@@ -8,6 +8,7 @@ app.get('/', function(req, res) {
   res.send('Hello World!');
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+app.server = require('http').createServer(app);
+app.server.listen(app.get('port'), function() {
+  console.log("Node app is running at port " + app.server.address().port);
 });
