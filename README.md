@@ -39,9 +39,21 @@ $ heroku open
 
 ## 文档
 
-### Express
+### Express 与各种中间件
+
+
+#### Express.Router()
 [官方关于 Express 4 的路由](http://expressjs.com/migrating-4.html#routing)
 [Express 4 路由的 Blog](http://scotch.io/tutorials/javascript/learn-to-use-the-new-router-in-expressjs-4)
+
+#### body-parser
+[Express 4 下的 body-parser](https://github.com/expressjs/body-parser?_ga=1.160154749.1165600469.1410616874)
+[Do Not Use bodyParser with Express.js](http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html)
+
+
+### MongoDB
+[Mongoose + RESTful 狗熊教程](http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4)
+
 
 ### Heroku部署
 关于 Heroku 上使用 Node.js 的更多信息，参见 Dev Center 的文章：
