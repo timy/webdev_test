@@ -56,6 +56,8 @@ $ heroku open
 ### MongoDB
 [Mongoose + RESTful 狗熊教程](http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4)
 
+[模块化设计](https://github.com/cmarin/MongoDB-Node-Express-Blog/blob/master/app.js)
+
 [常用命令](http://blog.csdn.net/shirdrn/article/details/7105539)
 `db.serverStatus()`
 
