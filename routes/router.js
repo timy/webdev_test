@@ -32,4 +32,24 @@ router.route('/customers')
     });
   });
 
+router.route('/customers/:id')
+  .get(function(req, res) {
+    customerProvider.findById(req.params.id, function(err, customer) {
+      if (err) res.send(err);
+      res.json(customer);
+    });
+  })
+  .put(function(req, res) {
+    customerProvider.updateById(req.params.id, req.body, function(err, customer) {
+      if (err) res.send(err);
+      res.json({ message: 'updated!' });
+    });
+  })
+  .delete(function(req, res) {
+    customerProvider.removeById(req.params.id, function(err, customer) {
+      if (err) res.send(err);
+      res.json({ message: 'deleted!' });
+    });
+  });
+
 module.exports = router;

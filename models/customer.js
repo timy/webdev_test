@@ -23,4 +23,27 @@ CustomerProvider.prototype.save = function(params, callback) {
   });
 };
 
+CustomerProvider.prototype.findById = function(id, callback) {
+  Customer.findById(id, function(err, customer) {
+    callback(err, customer);
+  });
+};
+
+CustomerProvider.prototype.updateById = function(id, params, callback) {
+  Customer.findById(id, function(err, customer) {
+    if (!err) {
+      customer.name = params['name'];
+      customer.save(function(err, customer) {
+        callback(err, customer);
+      });
+    }
+  });
+};
+
+CustomerProvider.prototype.removeById = function(id, callback) {
+  Customer.remove({ _id: id }, function(err, customer) {
+    callback(err, customer);
+  });
+};
+
 module.exports = CustomerProvider;
