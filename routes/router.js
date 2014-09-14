@@ -16,4 +16,21 @@ router.route('/json-test')
     res.json(req.body);
   });
 
+var Customer = require('../models/customer');
+router.route('/customers')
+  .get(function(req, res) {
+    Customer.find(function(err, customers) {
+      if (err) res.send(err);
+      res.json(customers);
+    });
+  })
+  .post(function(req, res) {
+    var customer = new Customer();
+    customer.name = req.body.name;
+    customer.save(function(err) {
+      if (err) res.send(err);
+      res.send({ message: 'Customer "' + customer.name + '" created!!' });
+    });
+  });
+
 module.exports = router;
