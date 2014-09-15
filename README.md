@@ -130,3 +130,4 @@ $ heroku open
 ### 架构
 
 [app.js](./app.js) 负责加载模块：数据库连接，Express，中间件，路由模块；创建服务器并在相应端口监听。
+[routes/router.js](./routes/router.js) 路由模块的总体实现
